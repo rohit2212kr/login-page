@@ -4,9 +4,13 @@
   "description": "Login and Signup application with React and Node.js",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "server": "node server.js",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "keywords": ["login", "signup", "react", "express"],
   "author": "",
