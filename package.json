@@ -1,0 +1,23 @@
+{
+  "name": "login-signup-app",
+  "version": "1.0.0",
+  "description": "Login and Signup application with React and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": ["login", "signup", "react", "express"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
