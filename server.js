@@ -13,6 +13,15 @@ app.use(bodyParser.json());
 // In-memory user storage (for demonstration)
 const users = [];
 
+// Health check endpoint
+app.get('/', (req, res) => {
+  res.json({ message: 'Login/Signup API Server is running!', status: 'OK' });
+});
+
+app.get('/api/health', (req, res) => {
+  res.json({ message: 'API is healthy', users: users.length });
+});
+
 // Signup endpoint
 app.post('/api/signup', async (req, res) => {
   try {
